@@ -1,9 +1,9 @@
 {
-    "id": "kasince2k-template",
-    "name": "kasince2k Template",
-    "description": "This is a test template based on the epic website by kasince2k",
+    "id": "test-resume-template",
+    "name": "Resume template for testing",
+    "description": "This is a test template used to tests the features for cvbuilder",
     "tags": [
-        "basic"
+        "test"
     ],
     "image": "image.png",
     "path": "resume/resume.tex"
