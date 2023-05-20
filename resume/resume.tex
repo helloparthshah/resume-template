@@ -7,6 +7,9 @@
 \titleformat{\subsection}[runin]
 {\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{}{}[]
 
+\newenvironment{education}{}{}
+\newenvironment{name}{}{}
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -21,9 +24,7 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\label{name}
-\namesection{Parth}{Shah}{ \urlstyle{same}
-\label{email}
+\namesection{\begin{name}Parth\end{name}}{Shah}{ \urlstyle{same}
 \href{mailto:helloparthshah@gmail.com}{helloparthshah@gmail.com} |
 \href{tel:15307864289}{+1 530-786-4289} | \href{mailto:pnshah@ucdavis.edu}{pnshah@ucdavis.edu}\\
 \sectionsep
@@ -44,11 +45,13 @@
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
+\section{Education}
+\begin{education}
 \subsection*{University of\\ California, Davis\\}
 \descript{BS in Computer Science and Engineering}
 \location{Class of '23 | Davis, CA}
 \location{ GPA: 3.7 / 4.0}
+\end{education}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
