@@ -9,6 +9,10 @@
 
 \newenvironment{education}{}{}
 \newenvironment{name}{}{}
+\newenvironment{university}{}{}
+\newenvironment{degree}{}{}
+\newenvironment{start_year}{}{}
+\newenvironment{gpa}{}{}
 
 \begin{document}
 
@@ -47,10 +51,10 @@
 
 \section{Education}
 \begin{education}
-\subsection*{University of\\ California, Davis\\}
-\descript{BS in Computer Science and Engineering}
-\location{Class of '23 | Davis, CA}
-\location{ GPA: 3.7 / 4.0}
+\subsection*{\begin{university}University of\\ California, Davis\\\end{university}}
+\descript{\begin{degree}BS in Computer Science and Engineering\end{degree}}
+\location{\begin{start_year}2019\end{start_year} - \begin{end_year}2023\end{end_year}}
+\location{ GPA: \begin{gpa}3.7\end{gpa} / 4.0}
 \end{education}
 \sectionsep
 
