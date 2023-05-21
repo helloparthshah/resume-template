@@ -6,5 +6,132 @@
         "test"
     ],
     "image": "image.png",
-    "path": "resume/resume.tex"
+    "path": "resume/resume.tex",
+    "schema": {
+        "name": {
+            "type": "string",
+            "default": ""
+        },
+        "email": {
+            "type": "link",
+            "default": ""
+        },
+        "phone": {
+            "type": "link",
+            "default": ""
+        },
+        "github": {
+            "type": "link",
+            "default": ""
+        },
+        "linkedin": {
+            "type": "link",
+            "default": ""
+        },
+        "website": {
+            "type": "link",
+            "default": ""
+        },
+        "education": {
+            "type": "array",
+            "items": {
+                "university": {
+                    "type": "string",
+                    "default": ""
+                },
+                "start_year": {
+                    "type": "string",
+                    "default": ""
+                },
+                "end_year": {
+                    "type": "string",
+                    "default": ""
+                },
+                "degree": {
+                    "type": "string",
+                    "default": ""
+                },
+                "gpa": {
+                    "type": "integer",
+                    "default": 0
+                }
+            }
+        },
+        "skills": {
+            "type": "array",
+            "items": {
+                "skill": {
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "awards": {
+            "type": "array",
+            "items": {
+                "year": {
+                    "type": "string",
+                    "default": ""
+                },
+                "position": {
+                    "type": "string",
+                    "default": ""
+                },
+                "award": {
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "projects": {
+            "type": "array",
+            "items": {
+                "name": {
+                    "type": "string",
+                    "default": ""
+                },
+                "description": {
+                    "type": "string",
+                    "default": ""
+                },
+                "link": {
+                    "type": "link",
+                    "default": ""
+                },
+                "date": {
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "experience": {
+            "type": "array",
+            "items": {
+                "company": {
+                    "type": "string",
+                    "default": ""
+                },
+                "position": {
+                    "type": "string",
+                    "default": ""
+                },
+                "start_date": {
+                    "type": "string",
+                    "default": ""
+                },
+                "end_date": {
+                    "type": "string",
+                    "default": ""
+                },
+                "location": {
+                    "type": "string",
+                    "default": ""
+                },
+                "description": {
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        }
+    }
 }
