@@ -17,6 +17,9 @@
 \newenvironment{link}{}{}
 \newenvironment{experience}{}{}
 \newenvironment{company}{}{}
+\newenvironment{projects}{}{}
+\newenvironment{skills}{}{}
+\newenvironment{skill}{}{}
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
 \usepackage[inline]{enumitem}
@@ -64,7 +67,7 @@
 
 \section{Education}
 \begin{education}
-\subsection*{\begin{university}University of California,\\ Davis\end{university}}
+\subsection*{\begin{university}University of California,\\ Davis\end{university}\\}
 \descript{\begin{degree}BS in Computer Science and Engineering\end{degree}}
 \location{\begin{year_start}2019\end{year_start} - \begin{year_end}2023\end{year_end}}
 \location{ GPA: \begin{gpa}3.7\end{gpa} / 4.0}
@@ -78,13 +81,11 @@
 \section{Skills}
 % \subsection{Programming}
 \location{Proficient with:}
-\begin{enumerate*}[label=\textbullet{}]
-% \begin{skills}
-% \begin{skill}
-  \item Java
-% \end{skill}
-% \end{skills}
-\end{enumerate*}
+% \begin{enumerate*}[label=\textbullet{}]
+\begin{skills}
+• \begin{skill}Java\end{skill}
+\end{skills}
+% \end{enumerate*}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -92,11 +93,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Awards} 
-\begin{tabular}{rll}
-% \begin{awards}
-% \begin{year_start}2022\end{year_start} & \begin{position}Winner\end{position} & \begin{award}SacHacks\end{award}\\
-% \end{awards}
-\end{tabular}
+% \begin{tabular}{rll}
+\begin{awards}
+\begin{year_start}2022\end{year_start} \begin{position}Winner\end{position} \begin{award}SacHacks\end{award}\\
+\end{awards}
+% \end{tabular}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -112,14 +113,15 @@
 %     Projects
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Projects}
-
-\begin{name}Stadia Wireless\end{name}
+\begin{projects}
+\subsection*{\begin{name}Stadia Wireless\end{name}}
 \descript{\medspace|\medspace\href{}{\begin{link}GitHub\end{link}}}
 \location{\begin{year_start}2022\end{year_start}}
 \vspace{\topsep}
 \begin{tightemize}
 \item \begin{summary} Description \end{summary}
 \end{tightemize}
+\end{projects}
 \sectionsep
 
 
@@ -141,7 +143,7 @@
 \begin{tightemize}
 \item \begin{summary}Managed to create a Code Analyzer that detects bugs and enforces coding practices before deployment which would be used by over 8 teams consisting of over 100 users\end{summary}
 \end{tightemize}
-\sectionsep
 \end{experience}
+\sectionsep
 \end{minipage}
 \end{document}  
