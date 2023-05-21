@@ -20,7 +20,7 @@
             "type": "link",
             "default": ""
         },
-        "github": {
+        "github_url": {
             "type": "link",
             "default": ""
         },
@@ -39,11 +39,11 @@
                     "type": "string",
                     "default": ""
                 },
-                "start_year": {
+                "year_start": {
                     "type": "string",
                     "default": ""
                 },
-                "end_year": {
+                "year_end": {
                     "type": "string",
                     "default": ""
                 },
@@ -69,7 +69,7 @@
         "awards": {
             "type": "array",
             "items": {
-                "year": {
+                "year_start": {
                     "type": "string",
                     "default": ""
                 },
@@ -90,7 +90,7 @@
                     "type": "string",
                     "default": ""
                 },
-                "description": {
+                "summary": {
                     "type": "string",
                     "default": ""
                 },
@@ -98,7 +98,7 @@
                     "type": "link",
                     "default": ""
                 },
-                "date": {
+                "year_start": {
                     "type": "string",
                     "default": ""
                 }
@@ -115,11 +115,11 @@
                     "type": "string",
                     "default": ""
                 },
-                "start_date": {
+                "year_start": {
                     "type": "string",
                     "default": ""
                 },
-                "end_date": {
+                "year_end": {
                     "type": "string",
                     "default": ""
                 },
@@ -127,7 +127,7 @@
                     "type": "string",
                     "default": ""
                 },
-                "description": {
+                "summary": {
                     "type": "string",
                     "default": ""
                 }
