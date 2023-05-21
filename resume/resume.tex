@@ -1,3 +1,22 @@
+\newenvironment{education}{}{}
+\newenvironment{name}{}{}
+\newenvironment{university}{}{}
+\newenvironment{degree}{}{}
+\newenvironment{year_start}{}{}
+\newenvironment{year_end}{}{}
+\newenvironment{gpa}{}{}
+\newenvironment{email}{}{}
+\newenvironment{phone}{}{}
+\newenvironment{website}{}{}
+\newenvironment{linkedin}{}{}
+\newenvironment{github_url}{}{}
+\newenvironment{awards}{}{}
+\newenvironment{position}{}{}
+\newenvironment{award}{}{}
+\newenvironment{summary}{}{}
+\newenvironment{link}{}{}
+\newenvironment{experience}{}{}
+\newenvironment{company}{}{}
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
 \usepackage[inline]{enumitem}
@@ -21,15 +40,16 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{\begin{name}Parth\end{name}}{Shah}{ \urlstyle{same}
-\href{mailto:helloparthshah@gmail.com}{helloparthshah@gmail.com} |
-\href{tel:15307864289}{+1 530-786-4289} | \href{mailto:pnshah@ucdavis.edu}{pnshah@ucdavis.edu}\\
+\namesection{}{\begin{name}Parth Shah\end{name}}{ \urlstyle{same}
+\href{}{\begin{email}helloparthshah@gmail.com\end{email}} |
+\href{}{\begin{phone}+1 530-786-4289\end{phone}}\\
 \sectionsep
-\href{https://github.com/helloparthshah}{github.com/helloparthshah} |
-\href{https://helloparthshah.github.io}{helloparthshah.github.io} |
-\href{https://www.linkedin.com/in/helloparthshah/}{linkedin.com/in/helloparthshah}
-%\href{https://www.youtube.com/c/ParthShah12345}{YouTube}
+\href{}{\begin{github_url}github.com/helloparthshah\end{github_url}} |
+\href{}{\begin{website}helloparthshah.github.io\end{website}} |
+\href{}{\begin{linkedin}linkedin.com/in/helloparthshah\end{linkedin}}
 }
+%\href{https://www.youtube.com/c/ParthShah12345}{YouTube}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN ONE
@@ -44,9 +64,9 @@
 
 \section{Education}
 \begin{education}
-\subsection*{\begin{university}University of\\ California, Davis\\\end{university}}
+\subsection*{\begin{university}University of California,\\ Davis\end{university}}
 \descript{\begin{degree}BS in Computer Science and Engineering\end{degree}}
-\location{\begin{start_year}2019\end{start_year} - \begin{end_year}2023\end{end_year}}
+\location{\begin{year_start}2019\end{year_start} - \begin{year_end}2023\end{year_end}}
 \location{ GPA: \begin{gpa}3.7\end{gpa} / 4.0}
 \end{education}
 \sectionsep
@@ -59,25 +79,11 @@
 % \subsection{Programming}
 \location{Proficient with:}
 \begin{enumerate*}[label=\textbullet{}]
+% \begin{skills}
+% \begin{skill}
   \item Java
-  \item C++
-  \item C 
-  \item Flutter 
-  \item Python
-  \item Django
-  \item HTML 
-  \item CSS 
-  \item JavaScript
-  \item ReactJs
-  \item NodeJs
-  \item Git 
-  \item MySQL
-  \item Bash 
-  \item \LaTeX
-  \item R 
-  \item Matlab
-  \item Assembly
-  \item Tensorflow
+% \end{skill}
+% \end{skills}
 \end{enumerate*}
 \sectionsep
 
@@ -87,12 +93,9 @@
 
 \section{Awards} 
 \begin{tabular}{rll}
-2022 & Winner & SacHacks\\
-2022 & Winner & HackDavis\\
-2021 & 2\textsuperscript{nd} & HackDavis\\
-2020 & Top 30 & PennApps XXI\\
-2020 & Top 20  & Google Solution\\
-2020 & 1\textsuperscript{st}/800+  & HackDavis\\
+% \begin{awards}
+% \begin{year_start}2022\end{year_start} & \begin{position}Winner\end{position} & \begin{award}SacHacks\end{award}\\
+% \end{awards}
 \end{tabular}
 \sectionsep
 
@@ -110,43 +113,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Projects}
 
-\subsection*{Stadia Wireless}
-\descript{\medspace|\medspace\href{https://github.com/helloparthshah/StadiaWireless}{GitHub}}
-\location{July 2022}
+\begin{name}Stadia Wireless\end{name}
+\descript{\medspace|\medspace\href{}{\begin{link}GitHub\end{link}}}
+\location{\begin{year_start}2022\end{year_start}}
 \vspace{\topsep}
 \begin{tightemize}
-\item Allows the Google Stadia Controller to be used wirelessly with the use of websockets.
-\item Has 300+ stars with multiple articles written about it.
+\item \begin{summary} Description \end{summary}
 \end{tightemize}
 \sectionsep
 
-\subsection*{Unify Course Assistant}
-\descript{\medspace|\medspace\href{https://github.com/helloparthshah/UNIfyCourseAssistant}{GitHub}}
-\location{April 2022}
-\vspace{\topsep}
-\begin{tightemize}
-\item A replacement for the UCDavis schedule builder based on ReactJs front-end and Python (Flask) back-end, an accompanying python discord bot, and a recommendation system to find peers.
-\item Searching and adding courses, viewing professor ratings, viewing the location on a map, viewing and exporting the calendar
-\end{tightemize}
-\sectionsep
-
-\subsection*{Gaize}
-\descript{\medspace|\medspace\href{https://gaize.tech}{Website} \href{https://github.com/helloparthshah/gaize}{GitHub}}
-\location{Jan 2021}
-\begin{tightemize}
-\item Gaze detection using the live camera feed based using a CNN model.
-\item Second place at HackDavis for Best use of TensorflowJs
-\end{tightemize}
-\sectionsep
-
-\subsection*{VeggieBuddie}
-\descript{\medspace|\medspace\href{https://devpost.com/software/veggie-buddie}{Website} \href{https://github.com/helloparthshah/VeggieBuddie}{GitHub}}
-\location{Jan 2020}
-\begin{tightemize}
-\item An app for those with diet restrictions, tells if safe to eat using an image of the ingredients
-\item Most Social Good Hack, Second best use of Google Cloud Platform at HackDavis.
-\item One of the top 20 solutions at Google's Solution Challenge.
-\end{tightemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Experience
@@ -157,46 +132,16 @@
 % \hfill
 \begin{minipage}[t]{1\textwidth}
 \section{Experience}
-
-\subsection*{Amazon}
+\begin{experience}
+\subsection*{\begin{company}Amazon\end{company}}
 \medspace|\medspace
-\descript{SDE Intern, Item Pipeline}
-\location{June 2022 - Sep 2022 | Sunnyvale, CA}
+\descript{\begin{position}SDE Intern, Item Pipeline\end{position}}
+\location{\begin{year_start}June 2022\end{year_start} - \begin{year_end}Sep 2022\end{year_end} | \begin{location}Sunnyvale, CA\end{location}}
 \vspace{\topsep}
 \begin{tightemize}
-\item Managed to create a Code Analyzer that detects bugs and enforces coding practices before deployment which would be used by over 8 teams consisting of over 100 users
-\item Worked with Java and Typescript while building Lambdas, SNS Topics, Pipelines, VPCs, Hosted Zones.
+\item \begin{summary}Managed to create a Code Analyzer that detects bugs and enforces coding practices before deployment which would be used by over 8 teams consisting of over 100 users\end{summary}
 \end{tightemize}
 \sectionsep
-
-\subsection*{Opal, llc.}
-\medspace|\medspace
-\descript{Junior Developer}
-\location{Sep 2021 - June 2022 | Remote}
-\vspace{\topsep}
-\begin{tightemize}
-\item Working with Flask, Django and, ReactJs to create a online NFT marketplace
-\item Leading the Social Media team which is developing a social media platform for users to interact with each other 
-\end{tightemize}
-\sectionsep
-
-\subsection*{Bit Project}
-\medspace|\medspace
-\descript{Workshop Lead}
-\location{Oct 2019 - Feb 2020 | Davis, CA}
-\begin{tightemize}
-\item Got the chance to work closely with companies such as MongoDB, Pusher and, Twitter to host workshops with 50+ audience members.
-\item Created various tutorials and learnt MERN Stack, Twitter API, Website designing, JavaScript.
-\end{tightemize}
-\sectionsep
-
-\subsection*{Niyantras}
-\medspace|\medspace
-\descript{Intern}
-\location{2019 | Vadodara, IN}
-\begin{tightemize}
-\item Helped to create a BLE based IOT solution for low budget systems.
-\item Worked on researching different modules and programmed a Raspberry PI to interact with their mobile app 
-\end{tightemize}
+\end{experience}
 \end{minipage}
 \end{document}  
